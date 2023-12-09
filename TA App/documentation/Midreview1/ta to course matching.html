@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TA-to-Course Matching</title>
+</head>
+<body>
+    <h2>Match TA to Course</h2>
+    <form action="/match_ta_to_course" method="post">
+        <label for="taName">Select TA:</label>
+        <select id="taName" name="taName">
+            <option value="ta1">TA Name 1</option>
+            <option value="ta2">TA Name 2</option>
+            <!-- Add other TAs here -->
+        </select><br><br>
+        
+        <label for="courseCode">Select Course:</label>
+        <select id="courseCode" name="courseCode">
+            <option value="cs101">CS101 - Introduction to Computing</option>
+            <option value="cs102">CS102 - Data Structures</option>
+            <!-- Add other courses here -->
+        </select><br><br>
+        
+        <input type="submit" value="Match TA">
+    </form>
+</body>
+</html>
