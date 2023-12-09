@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TA Management Suite - TA Applicant</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <div class="top-nav">
+    <img src="{{ url_for('static',filename='logo.png') }}" alt="University Logo" class="logo">
+    <nav class="nav-links">
+      <a href="http://localhost:5555/TAManagementSuite/home" onclick="showSection('home')">Home</a>
+      <a href="http://localhost:5555/TAManagementSuite/TAApplicant/Login" onclick="showSection('submit-application')">TA Applicant</a>
+      <a href="http://localhost:5555/TAManagementSuite/DepartmentStaff/Login" onclick="showSection('check-status')">Department Staff</a>
+      <a href="http://localhost:5555/TAManagementSuite/TACommittee/Login" onclick="showSection('your-data')">TA Committee</a>
+      <a href="http://localhost:5555/TAManagementSuite/Instructor/Login" onclick="showSection('notifications')">Instructor</a>
+      <a href="http://localhost:5555/TAManagementSuite/ContactUs">Contant Us</a>
+    </nav>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="container" id="main-content">
+    <!-- Placeholder for dynamic section content -->
+    <div class="welcome-section">
+      <h1>Welcome to the TA Management Suite</h1>
+      <p>Select an option from the menu above to begin.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Florida Atlantic University</p>
+  </footer>
+</body>
+</html>
